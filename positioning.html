@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> CSS</title>
+        <style> 
+            body{ 
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            .Sidebar{ 
+                position: fixed;
+                width: 200px;
+                height: 100vh;
+                background-color: black;
+                color: antiquewhite;
+                box-sizing: border-box;
+            }
+            .Sidebar h2{ 
+                color: antiquewhite;
+            }
+            .Sidebar ul{
+             list-style:  none ;
+             padding: 0;
+            }
+            .Sidebar ul li{ 
+                margin: 50px;
+            }
+            .article{
+                margin-left: 220px;
+                padding: 20px;
+                background-color: white;
+                width: calc(100%-220px);
+            }
+            .article h1{  
+                color: rgb(34, 34, 35);
+            }
+            .image-gallery{
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                gap: 10px;
+                margin-top: 50px;
+            }
+            .image-gallery img{
+                width: 100%;
+                height: auto;
+               border: 2px solid rgb(133, 111, 111);
+               border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body> 
+        <!--- Sidebar section-->
+        <div class="Sidebar"> 
+       <h3> 
+        Sidebar Menu
+       </h3>
+       <ul> 
+        <li>
+            <a href="https://www.codingal.com/bn-bd/student/dashboard/classes/11133918/" style="color-white"> Home </a>
+        </li>
+        <li>
+            <a href="https://www.codingal.com/bn-bd/student/dashboard/classes/11133918/" style="color-white"> Menu </a>
+        </li>
+        <li>
+            <a href="https://www.codingal.com/bn-bd/student/dashboard/classes/11133918/" style="color-white"> Help</a>
+        </li>
+        <li>
+            <a href="https://www.codingal.com/bn-bd/student/dashboard/classes/11133918/" style="color-white"> Settings </a>
+        </li>
+       </ul>
+        </div>
+        <!---- Article Section-->
+        <div class="article"> 
+         <h1> Article </h1>
+           <p> In this lessson you will be introduced to positioning in css</p>
+           
+           <!----Image gallery-->
+           <div class="image-gallery"> 
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+           </div>
+
+           <div class="image-gallery"> 
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+            <img src="https://storage.googleapis.com/jpn-new-wp/uploads/2021/08/f4526278-image_tokyo.jpg" alt="Image 1" id="img1">
+           </div>
+
+        </div>
+        
+    </body>
+</html>
